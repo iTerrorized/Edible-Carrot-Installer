@@ -1,6 +1,6 @@
 {
     "name": "Carrot Installer Listing",
-    "id": "dev.terrorized.vpm-listing",
+    "id": "dev.terrorized.CarrotListing",
     "url": "https://iterrorized.github.io/vpm-packages/index.json",
     "author": {
         "email": "xterrorized@outlook.com",
