@@ -1,0 +1,21 @@
+{
+    "name": "Terrorized's VPM Packages",
+    "id": "dev.terrorized.vpm-listing",
+    "url": "https://iterrorized.github.io/vpm-packages/index.json",
+    "author": {
+        "email": "xterrorized@outlook.com",
+        "name": "Terrorized",
+        "url": "https://terrorized.dev"
+    },
+    "description": "For use with the VRChat Creator Companion",
+    "infoLink": {
+        "url": "https://terrorized.dev",
+        "text": "Website"
+    },
+    "bannerUrl": "banner.png",
+    "githubRepos": [
+        "iTerrorized/dev.terrorized.drm",
+        "iTerrorized/dev.terrorized.ediblecarrot"
+    ],
+    "packages": []
+}
