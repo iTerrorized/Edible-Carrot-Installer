@@ -170,6 +170,27 @@ body {
   font-size: 1rem;
 }
 
+/* DRM Notice Card */
+.drm-card {
+  text-align: center;
+  padding: 1.25rem 2rem;
+}
+
+.drm-card p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.5;
+}
+
+.drm-card a {
+  color: #7eb8ff;
+  text-decoration: none;
+}
+
+.drm-card a:hover {
+  text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   .page {
