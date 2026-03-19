@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VCC Listing</title>
+  <title>Edible Carrot Installer - Terrorized</title>
   <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -33,6 +33,20 @@
         {{~ end; ~}}
       </div>
     </div>
+    <fluent-card class="quickstart-card mt-4 p-4">
+      <h3 class="m-0 mb-2">Quick Start</h3>
+      <ol class="quickstart-steps m-0 ps-5">
+        <li>Click <strong>Add to VCC</strong> below to add this listing to VRChat Creator Companion</li>
+        <li>In VCC, add <strong>Edible Carrot System</strong> to your avatar project</li>
+        <li>In Unity, add the <strong>Edible Carrot Installer</strong> component to your avatar</li>
+        <li>Enter your license key and click <strong>Verify</strong></li>
+        <li>Choose <strong>Single Hand</strong> or <strong>Dual Hand</strong> mode</li>
+        <li>Click <strong>Start Setup</strong>, position the carrot, then <strong>Finish Setup</strong></li>
+      </ol>
+      <div class="caption1 mt-2">
+        For detailed instructions, see the <a href="https://github.com/iTerrorized/dev.terrorized.ediblecarrot" target="_blank">full documentation</a>.
+      </div>
+    </fluent-card>
     <div class="addToVccBlock mt-4 row align-items-center">
       <fluent-text-field aria-readonly="true" id="vccUrlField" class="vccUrlField" readonly value="{{ listingInfo.Url }}">
       </fluent-text-field>
@@ -144,11 +158,37 @@
         {{~ end ~}}
       </fluent-data-grid>
     </fluent-card>
-    {{~ if listingInfo.InfoLink.Url ~}}
-      <div class="caption1">
-        <a href="{{listingInfo.InfoLink.Url}}" target="_blank">{{ if listingInfo.InfoLink.Text; listingInfo.InfoLink.Text; else; "Learn More"; end; }}</a>
+    <fluent-card class="controls-card mt-4 p-4 w-90">
+      <h3 class="m-0 mb-2">In-Game Controls</h3>
+      <div class="controls-grid">
+        <div class="control-item">
+          <strong>Fist gesture</strong>
+          <span>Spawn / Respawn carrot</span>
+        </div>
+        <div class="control-item">
+          <strong>Put near mouth</strong>
+          <span>Bite the carrot</span>
+        </div>
+        <div class="control-item">
+          <strong>Open hand</strong>
+          <span>Throw the carrot</span>
+        </div>
+        <div class="control-item">
+          <strong>Fist again</strong>
+          <span>Respawn the carrot</span>
+        </div>
       </div>
-    {{~ end; ~}}
+      <div class="caption1 mt-3">
+        Enable and disable the carrot from your VRC Expressions Menu.
+      </div>
+    </fluent-card>
+    <div class="caption1 mt-3 mb-4">
+      {{~ if listingInfo.InfoLink.Url ~}}
+        <a href="{{listingInfo.InfoLink.Url}}" target="_blank">{{ if listingInfo.InfoLink.Text; listingInfo.InfoLink.Text; else; "Learn More"; end; }}</a> &middot;
+      {{~ end; ~}}
+      <a href="https://github.com/iTerrorized/dev.terrorized.ediblecarrot" target="_blank">Documentation</a> &middot;
+      Made by <a href="https://terrorized.dev" target="_blank">Terrorized</a>
+    </div>
   </div>
   <script type="module" src="app.js"></script>
 </body>

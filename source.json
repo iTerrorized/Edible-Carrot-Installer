@@ -1,5 +1,5 @@
 {
-    "name": "Carrot Installer Listing",
+    "name": "Edible Carrot Installer",
     "id": "dev.terrorized.CarrotListing",
     "url": "https://iterrorized.github.io/Edible-Carrot-Installer/index.json",
     "author": {
@@ -7,7 +7,7 @@
         "name": "Terrorized",
         "url": "https://terrorized.dev"
     },
-    "description": "For use with the VRChat Creator Companion",
+    "description": "An edible carrot avatar accessory for VRChat. Hold it, bite it, throw it!",
     "infoLink": {
         "url": "https://terrorized.dev",
         "text": "Website"

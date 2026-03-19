@@ -195,4 +195,51 @@ h1 {
 .pe-4 { padding-right: 1rem; }
 .pe-5 { padding-right: 2rem; }
 .w-100 { width: 100%; }
+.w-90 { max-width: 90%; width: 100%; }
 .flex-1 { flex: 1; }
+
+/* Quick Start Card */
+.quickstart-card {
+  max-width: 90%;
+  width: 100%;
+}
+
+.quickstart-steps li {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+/* Controls Card */
+.controls-card {
+  max-width: 90%;
+  width: 100%;
+}
+
+.controls-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.control-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  background-color: var(--neutral-fill-hover);
+}
+
+.control-item strong {
+  margin-bottom: 0.2rem;
+}
+
+.control-item span {
+  font-size: 0.9rem;
+  color: var(--neutral-foreground-hover);
+}
+
+@media (max-width: 600px) {
+  .controls-grid {
+    grid-template-columns: 1fr;
+  }
+}
